@@ -1,9 +1,9 @@
-# Eurozone E-Commerce - SQL Analysis Layer
+# Eurozone E-Commerce - SQL Analysis
 
 This repository contains the SQL analysis layer that supports the
 [`eurozone-ecommerce-ssql-data-warehouse`](https://github.com/onurkisa/eurozone-ecommerce-sql-data-warehouse)
-project and powers the Eurozone E-Commerce Sales Dashboard (Overview and
-Category Analysis pages).
+project and powers the Eurozone E-Commerce Business Performance (Executive Overview and
+Category & Brand Insights pages).
 
 The goal of this layer is to provide a clean, monthly level dataset containing
 the five core KPIs used throughout the dashboard:
@@ -76,7 +76,7 @@ and visualize all analytic scenarios.
 
 ## Files in This Repository
 
-- `script/gold_sales_report.sql`  
+  - [`gold.sales_report.sql`](script/gold.sales_report.sql) 
   Creates the `gold.sales_report` view in the warehouse.  
   Grain: Month x Country x Category x Subcategory x Brand.  
   Contains:
@@ -92,4 +92,7 @@ and visualize all analytic scenarios.
 The view created by `gold_sales_report.sql` is used as the primary data source
 for the following Tableau dashboards:
 
+- **Dashboard link:** [`here`](https://public.tableau.com/app/profile/onur.kisa/viz/EurozoneE-CommerceBusinessPerformance/Overview)
 
+- [`Screenshot of the Executive Overview`](Screenshots/Overview.png)
+- [`Screenshot of the Category & Brand Insights`](Screenshots/Category%20%26%20Brand%20Insights.png)
